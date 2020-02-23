@@ -30,11 +30,14 @@ pub fn build_unix(out_dir: &str) {
 pub fn generate_bindings(out_dir: &str) {
     let bindings = bindgen::Builder::default()
         .header("db-5.3.21/build_unix/db.h")
+        .derive_copy(true)
+        .derive_debug(true)
+        .derive_default(true)
         .generate()
         .expect("Unable to generate bindings");
 
     let out_path = PathBuf::from(&out_dir);
     bindings
-        .write_to_file(out_path.join("ffi_5_3.rs"))
+        .write_to_file(out_path.join("ffi.rs"))
         .expect("Couldn't write bindings!");
 }

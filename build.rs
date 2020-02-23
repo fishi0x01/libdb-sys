@@ -9,9 +9,7 @@ fn main() {
     if cfg!(feature = "v5_3") {
         build_5_3::build_unix(&out_dir);
         build_5_3::generate_bindings(&out_dir);
-    }
-
-    if cfg!(feature = "v4_8") {
+    } else if cfg!(feature = "v4_8") {
         build_4_8::build_unix(&out_dir);
         build_4_8::generate_bindings(&out_dir);
     }

@@ -1,7 +1,7 @@
 [package]
 name = "libdb-sys"
 version = "0.1.0"
-authors = ["Jesse Morgan <jesse@jesterpm.net>"]
+authors = ["Jesse Morgan <jesse@jesterpm.net>", "Karl Fischer <fishi0x01@gmail.com>"]
 
 links = "db"
 build = "build.rs"
