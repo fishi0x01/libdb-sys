@@ -9,7 +9,7 @@ pub fn build_unix(out_dir: &str) {
     let build_dir = Path::new(SOURCE_DIR).join("build_unix");
     Command::new("../dist/configure")
         .arg(&format!("--prefix={}", out_dir))
-        .arg("--with-pic")
+        .arg("--with-gnu-ld")
         .current_dir(&build_dir)
         .status()
         .unwrap();
