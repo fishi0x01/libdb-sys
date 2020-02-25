@@ -11,7 +11,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Prepare
         run: sudo apt-get update && sudo apt-get install -y llvm-dev
+      - name: Build default
+        run: cargo build && cargo clean
       - name: Build v4.8
-        run: cargo build --features v4_8 && cargo clean
+        run: cargo build --no-default-features --features v4_8 && cargo clean
       - name: Build v5.3
-        run: cargo build --features v5_3 && cargo clean
+        run: cargo build --no-default-features --features v5_3 && cargo clean
