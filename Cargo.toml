@@ -12,7 +12,6 @@ v5_3 = []
 v4_8 = []
 
 [dependencies]
-libc = "0.2.67"
 
 [build-dependencies]
 bindgen = "0.51.1"

@@ -1,5 +1,4 @@
 //! FFI Bindings for Berkeley DB.
-extern crate libc;
 
 pub mod ffi {
     #![allow(non_upper_case_globals)]
