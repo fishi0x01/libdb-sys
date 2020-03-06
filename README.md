@@ -4,4 +4,6 @@
 
 # libdb-sys
 
-Bindings for Berkeley DB.
+Bindings for Berkeley DB 4.8.x and 5.3.x.
+
+This is a humble fork from [jesterpm's](https://github.com/jesterpm/libdb-sys) libdb-sys.
