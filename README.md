@@ -16,7 +16,7 @@ This is a humble fork from [jesterpm's](https://github.com/jesterpm/libdb-sys) l
 
 By default, Berkeley DB 5.3.x is used. 
 
-## Licensing notice
+## Berkeley DB licensing notice
 
 Website: http://www.oracle.com/database/berkeley-db/
 
